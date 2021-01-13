@@ -39,6 +39,10 @@ The analysis performed shows that:
  ## Election Audit Summary
  The code used in this analysis can be used for any election with minor modification.  
  
- 1.  
+ 1.  The current code loops through candidate and counties, however, this could be expanded upon to include additional jursidctions through the use of an additional dictionary.
+ 
+ 2.  Provided the underlying information is available the code could be expanded upon to include analysis on type of coting; mail in ballots, in person ballots and advance ballots.
+ 
+ 
  
  
