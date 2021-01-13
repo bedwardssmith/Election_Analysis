@@ -2,7 +2,7 @@
 Module 3 Practice
 
 ## Project Overview
-A Colorado Board of Elections employee requested an audit of a recent local congressional election.  The analysis required a review of:
+A Colorado Board of Elections employee requested an audit of a recent local congressional election.  The analysis required a review of the following:
 
 * Calculation of the total votes cast.
 * Breakdown of the number of votes and the percentage of total votes for each county.
@@ -20,16 +20,16 @@ The analysis performed shows that:
 * There were 369, 711 votes cast in this congressional election.
 
 * The breakdown of votes and the percentage of total votes for each county in the precinct were:
-  * Jefferson 38,855 votes representing 10.5% of the total votes cast
-  * Denver 306,055 votes representing 82.8% of the total votes cast
-  * Arapahoe 24,801 votes representing 6.7% of the total votes cast
+  * Jefferson 38,855 with votes representing 10.5% of the total votes cast
+  * Denver 306,055 with votes representing 82.8% of the total votes cast
+  * Arapahoe 24,801 with votes representing 6.7% of the total votes cast
   
-* Denver county had the largest number of votes.
+* Denver county had the largest number of votes with 306,055 votes representing 82.8% of the total votes.
 
 * The breakdown of votes and the percentage of total votes for each candidate in the precinct were:
-  * Charles Casper Stockham 85,213 votes representing 23.08% of the total votes cast
-  * Diana DeGette 272,892 votes representing 73.8% of the total votes cast
-  * Raymon Anthony Doane 11,606 votes representing 3.1% of the total votes cast
+  * Charles Casper Stockham with 85,213 votes representing 23.08% of the total votes cast
+  * Diana DeGette with 272,892 votes representing 73.8% of the total votes cast
+  * Raymon Anthony Doane with 11,606 votes representing 3.1% of the total votes cast
   
 * Diane DeGette won the election with 272,892 votes representing 73.8% of the total votes.
 
@@ -39,9 +39,9 @@ The analysis performed shows that:
  ## Election Audit Summary
  The code used in this analysis can be used for any election with minor modification.  
  
- 1.  The current code loops through candidate and counties, however, this could be expanded upon to include additional jursidctions through the use of an additional dictionary.
+ 1.  The code could be expanded to include additional jursidictions through the use of an additional dictionary to capture the information and the looping through of the rows to capture the data.
  
- 2.  Provided the underlying information is available the code could be expanded upon to include analysis on type of coting; mail in ballots, in person ballots and advance ballots.
+ 2.  Provided the underlying information is available the code could be expanded upon to include analysis on type of voting; mail in ballots, in person ballots and advance ballots.  Once again this can easily be done through the use of an additional dictionary and the looping through of the rows of data to capture the information.
  
  
  
