@@ -67,13 +67,14 @@ with open(file_to_load) as election_data:
         if county_name not in county_options:
 
             # 4b: Add the existing county to the list of counties.
-            county_options.append(county_options)
+            county_options.append(county_name)
 
             # 4c: Begin tracking the county's vote count.
             county_votes[county_name] = 0
 
         # 5: Add a vote to that county's vote count.
         county_votes[county_name] += 1
+        
 
 
 # Save the results to our text file.
@@ -85,30 +86,31 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes: {county_votes:,}\n")
+        f"County Votes: \n")
     print(election_results, end="")
 
     txt_file.write(election_results)
 
     # 6a: Write a for loop to get the county from the county dictionary.
-    #for county_name in county_votes:
     for county_name in county_votes:
 
         # 6b: Retrieve the county vote count.
-        countyvotes = county_votes.get(county_name)
-
-        # 6c: Calculate the percentage of votes for the county.
-        countyvote_percentage = float(county_votes) / float(total_votes) * 100
-
-         # 6d: Print the county results to the terminal.
-        county_results = (
-        f"{county_name}: {countyvote_percentage:.1f}$ ({countyvotes:,})\n")
+        countyresults = county_votes.get(county_name)
         
+           
+        # 6c: Calculate the percentage of votes for the county.
+        countyvotepercentage = float(countyresults) / float(total_votes) * 100
+
+        # 6d: Print the county results to the terminal.
+        print(county_name)
 
          # 6e: Save the county votes to a text file.
-
+        #with open(file_to_save, "w") as txt_file:
+         #   county_results = (
+          #      f"county votes: {county_votes:,}\n")   
          # 6f: Write an if statement to determine the winning county and get its vote count.
-
+       # if (county_votes > winning_county):
+        #    winning_county = largest_county
 
     # 7: Print the county with the largest turnout to the terminal.
 
